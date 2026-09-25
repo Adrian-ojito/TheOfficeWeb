@@ -1,0 +1,222 @@
+body{
+    background-color: rgb(180, 180, 180);
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    display: flex;
+    background-color: tomato;
+    height: 50px;
+    margin: 0px;
+    padding: 0px;
+    width: 83.1%;
+
+}
+
+ul li {
+    flex: 1;
+    border: 1px solid;
+    list-style: none;
+    display: flex;              /* convierte el li en flexbox */
+    justify-content: center;    /* centra horizontalmente */
+    align-items: center;        /* centra verticalmente */
+}
+
+ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+li.active{
+    background-color: brown;
+}
+
+ul li:hover:not(.active){
+    background-color: beige;
+}
+
+
+h2{
+    text-align: center;
+    font-size: 50px;
+}
+
+.contenedor {
+    display: flex;
+    align-items: flex-start;
+    gap: 0px;
+    padding: 0px 10px 0px 10px;
+}
+
+.contenedor1{
+    text-align: center;
+    flex: 1;
+    width: 400px;
+    height: 400px;
+}
+
+.contenedor2{
+    text-align: center;
+    border: 2px dashed black ;
+    border-radius: 15px;
+    width: 400px;
+    height: 400px;
+}
+
+.contenedor3 {
+    position: fixed;        
+    top: 0;
+    right: 0;               
+    width: 250px;           
+    height: 100vh;        
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    gap: 15px;
+    padding:0 0 0 0;
+    margin: 0;
+    
+
+    overflow-y: auto;     
+    overflow-x: hidden;  
+
+    background-color:#ccc;
+}
+
+
+.contenedor_texto{
+    width: 50%;
+    height: auto;
+    text-align:left;
+
+
+}
+
+.img1 {
+    width: 400px;
+    height: auto;
+    padding-top: 10px;
+    }
+
+.sepe{
+    border: 1px solid black; 
+    background-color: rgb(90, 90, 90);  
+    padding: 6px;            
+    margin: 0;   
+    width: 388px;  
+    text-align: center;         
+
+}
+
+.sep{
+    border: solid 1px black;
+    background-color: rgb(167, 167, 167);
+    padding: 6px;            
+    margin: 0; 
+    width: 388px;
+}
+
+.img2 {
+
+    width: 200px;
+    height: 250px;
+    border-radius: 10px;     
+    border: 2px solid #ccc;    
+    padding: 5px;              
+
+
+}
+
+.texto {
+    flex: 1;
+    padding-left:10px ;
+    padding-right: 10px;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+
+.personaje{
+    background-color: #fff;          
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    margin-bottom: 16px;
+    text-align: center;
+    padding: 10px;
+}
+
+.personaje img {
+    max-width: 100%;
+    border-radius: 4px;
+}
+
+.caption{
+    font-family: "Segoe UI", sans-serif;
+    font-size: 14px;
+    color: #555;
+    margin-top: 8px;
+    font-weight: 500;
+}
+
+.contenedor_image{
+    text-align: left;
+    width: 30%;
+    padding: 0;
+    gap: 0;
+
+}
+
+.contenedor_image:hover{
+    opacity: 1;
+    flex-direction: row-reverse;
+}
+
+.contenedor_flex {
+    display: flex;        
+    flex-direction: row;
+    flex-wrap: nowrap;       
+    justify-content: flex-end;
+    align-items: flex-start;  
+    gap: 10px;              
+    width: 100%;
+}
+
+.contenedor_flex video {
+    padding: 10px 0 10px 0;         
+    width: 200px;         
+    height: auto;           
+}
+
+input {
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+input:focus {
+    border-color: #3498db;      /* Cambia color al hacer foco */
+    box-shadow: 0 0 8px #3498db;
+    outline: none;              /* Quita el borde por defecto */
+}
+
+.division{
+    border: 2px dashed black;
+    width: 90%;
+    height: 0px;
+}
+
+h1{
+    font-size: 60px;
+}
+h2{
+    font-size: 40px;
+}
+
+div i{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 30px;
+}
+
+

@@ -1,0 +1,184 @@
+body{
+    background-color: rgb(213, 211, 211);
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    display: flex;
+    background-color: tomato;
+    height: auto;
+    margin: 0px;
+    padding: 0px;
+    height: 50px;
+
+}
+
+ul li {
+    flex: 1;
+    border: 1px solid;
+    list-style: none;
+    display: flex;              /* convierte el li en flexbox */
+    justify-content: center;    /* centra horizontalmente */
+    align-items: center;        /* centra verticalmente */
+}
+
+ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+li.active{
+    background-color: brown;
+}
+
+ul li:hover:not(.active){
+    background-color: beige;
+}
+
+
+h2{
+    text-align: center;
+    font-size: 50px;
+}
+
+.contenedor {
+    display: flex;
+    align-items: flex-start;
+    gap: 50px;
+    padding: 0px 40px 0px 40px;
+}
+
+.contenedor1{
+    text-align: center;
+    flex: 1;
+    width: 400px;
+    height: 400px;
+}
+
+.contenedor2{
+    text-align: center;
+    border: 1px white solid;
+    border-radius: 15px;
+    width: 400px;
+    height: 500px;
+    background-color: rgb(200, 199, 199);
+    padding: 0 10px 0 10px;
+}
+
+.contenedor2 p{
+    padding: 0 40px 0 40px;
+    font-size: 15px;
+}
+
+
+.img1 {
+    width: 400px;
+    height: auto;
+    padding-top: 25px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.img2 {
+    background-color: gra;
+    width: 200px;
+    height: 250px;
+    border-radius: 10px;     
+    border: 2px solid #ccc; 
+    padding: 5px;              
+
+
+}
+
+.texto {
+    flex: 1;
+    padding-left:10px ;
+    padding-right: 10px;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+
+.image{
+    max-width: 320px;
+    max-height: 500px;
+    padding-top: 20px;
+    
+}
+
+.contenedor_image{
+    text-align: center;
+    opacity: 0;
+
+}
+
+.contenedor_image:hover{
+    opacity: 1;
+    flex-direction: row-reverse;
+}
+
+.contenedor_flex {
+    display: flex;
+    flex-wrap: wrap;                 
+    justify-content: center;         
+    align-items: center;
+    gap: 35px; 
+    padding-top: 0; 
+    padding-left: 80px;   
+    width: 90%;
+}
+
+.title{
+    font-family: "Segoe UI", sans-serif;
+    font-size: 50px;
+    color: #333;
+    margin-bottom: 16px;
+    border-bottom: 4px solid #b8b7b7;
+    padding-bottom: 6px;
+
+}
+
+.video {
+    background-color: #f7f5f5;
+    border-radius: 6px;
+    text-align: center;
+    padding: 10px 10px 0px 10px;
+    width: 25%;                   
+
+}
+
+.video video{
+    max-width: 100%;
+    border-radius: 4px;
+    margin-bottom: 8px;
+    padding-top: 10px;
+}
+
+.video p{
+    font-size: 30px;
+    color: #555;
+    font-style: italic;
+    
+
+}
+
+input {
+    padding: 5px;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+input:focus {
+    border-color: #3498db;      
+    box-shadow: 0 0 8px #3498db;
+    outline: none;              
+}
+
+div label{
+    padding: 0;
+    margin: 0;
+}
+
+
